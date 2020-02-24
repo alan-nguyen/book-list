@@ -21,6 +21,8 @@ document.getElementById("book-form").addEventListener("submit", function(e) {
   // Instantiate UI
   const UI = new UI();
 
-  console.log(book);
+  // Add book to list
+  ui.addBookToList(book);
+
   e.preventDefault();
 });
