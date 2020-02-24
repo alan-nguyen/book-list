@@ -18,6 +18,9 @@ document.getElementById("book-form").addEventListener("submit", function(e) {
   // Instantiate book
   const book = new Book(title, author, isbn);
 
+  // Instantiate UI
+  const UI = new UI();
+
   console.log(book);
   e.preventDefault();
 });
