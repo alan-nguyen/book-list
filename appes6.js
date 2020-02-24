@@ -42,7 +42,11 @@ class UI {
     }, 3000);
   }
 
-  deleteBook(target) {}
+  deleteBook(target) {
+    if (target.className === "delete") {
+      target.parentElement.parentElement.remove();
+    }
+  }
 
   clearField() {}
 }
