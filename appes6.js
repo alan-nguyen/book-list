@@ -90,6 +90,9 @@ class Store {
   static removeBook() {}
 }
 
+// DOM Load Event
+document.addEventListener("DOMContentLoaded", Store.displayBooks);
+
 // Event Listeners for add book
 document.getElementById("book-form").addEventListener("submit", function(e) {
   // Get form values
