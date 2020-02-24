@@ -71,7 +71,7 @@ class Store {
   static displayBooks() {
     const books = Store.getBooks();
 
-    books.foreach(function(book) {
+    books.forEach(function(book) {
       const ui = new UI();
 
       // Add book to UI
