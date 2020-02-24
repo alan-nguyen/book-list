@@ -45,7 +45,8 @@ document.getElementById("book-form").addEventListener("submit", function(e) {
 
   // Validate
   if (title === "" || author === "" || isbn === "") {
-    alert("Failed");
+    // Error alert
+    UI.showAlert("Please fill in all fields", "error");
   } else {
     // Add book to list
     ui.addBookToList(book);
